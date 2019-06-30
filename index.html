@@ -27,7 +27,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="icon" type="image/png" href="images/favicon.png">
 
-        <!-- Other
+    <!-- Other
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <script src="https://d3js.org/d3-dsv.v1.min.js"></script>
     <script src="https://d3js.org/d3-fetch.v1.min.js"></script>
@@ -42,6 +42,7 @@
             <div class="eleven columns" style="margin-top: 10%">
                 <div class="intro">
                     <h1>Nathan Cohen</h1>
+                    <h5>Purdue Computer Science: Class of 2021</h5>
                     <a href="mailto:nathancohen@purdue.edu">nathancohen@purdue.edu</a>
                     <br>
                     <!-- Place this tag where you want the button to render. -->
@@ -63,7 +64,32 @@
                 </div>
                 <div id="professional">
                     <h3><u>Professional Experience</u></h3>
+                    <div id="pe_content"></div>
                 </div>
+                <div id="relevant-coursework">
+                    <h3><u>Completed Courses</u></h3>
+                    <ul>
+                        <li>CS 18200: Discrete Math</li>
+                        <li>CS 24000: Programming in C</li>
+                        <li>CS 25000: Computer Architecture</li>
+                        <li>CS 25100: Data Structures and Algorithmns</li>
+                        <li>CS 25200: Systems Programming</li>
+                        <li>CS 34800: Information Systems</li>
+                        <li>CS 35400: Operating Systems</li>
+                    </ul>
+                    <h3><u>Current Courses (Fall 2019)</u></h3>
+                    <ul>
+                        <li>CS 38100: Introduction to the Analysis of Algorithms</li>
+                        <li>CS 42200: Computer Networks</li>
+                    </ul>
+                    <h3><u>Teaching Assistant</u></h3>
+                    <ul>
+                        <li>CS 18000: Introduction to Object Oriented Programming and Problem Solving</li>
+                    </ul>
+                </div>
+
+
+
                 <script>
                     function render(id, text) {
                         document.getElementById(id).innerHTML += text;
@@ -78,7 +104,7 @@
                         text += "<br>" + "<i>" + element.description + "</i>";
                         text += "</p>";
                         //  text += "<br>"
-                        render("professional", text);
+                        render("pe_content", text);
                     }
                     path = "./assets/professionalExp.csv"
                     d3.csv(path).then(function (data) {
