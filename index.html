@@ -1,46 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
-  <!-- Basic Page Needs
+    <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>Your page title here :)</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
+    <meta charset="utf-8">
+    <title>Nathan Cohen</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  <!-- Mobile Specific Metas
+    <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- FONT
+    <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
-  <!-- CSS
+    <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
 
-  <!-- Favicon
+    <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
-
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <script src="https://d3js.org/d3-dsv.v1.min.js"></script>
+    <script src="https://d3js.org/d3-fetch.v1.min.js"></script>
 </head>
+
 <body>
 
-  <!-- Primary Page Layout
+    <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
-    <div class="row">
-      <div class="one-half column" style="margin-top: 25%">
-        <h4>Basic Page</h4>
-        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
-      </div>
-    </div>
-  </div>
+    <div class="container">
+        <div class="row">
+            <div class="eleven columns" style="margin-top: 10%">
+                <div class="intro">
+                    <h1>Nathan Cohen</h1>
+                    <a href="mailto:nathancohen@purdue.edu">nathancohen@purdue.edu</a>
+                    <br>
+                    <!-- Place this tag where you want the button to render. -->
+                    <a class="github-button" href="https://github.com/nathancohen4299" data-size="large" aria-label="Follow @nathancohen4299 on GitHub">Follow
+                        @nathancohen4299
+                    </a>
+                </div>
+                <div id="education">
+                    <h3><u>Education</u></h3>
+                    <h5 class="inline">Purdue University</h5>
+                    <p class="inline">(West Lafayette, IN)</p>
+                    <p class="">
+                        <i> Bachelor of Science: School of Computer Science</i>
+                        <br>
+                        <i>Expected Graduation Date: May 2021</i>
+                        <br>
+                        <i>Cumulative GPA: </i> <b>3.72</b>
+                    </p>
+                </div>
+                <div id="professional">
+                    <h3><u>Professional Experience</u></h3>
+                </div>
+                <script>
+                    function render(id, text) {
+                        document.getElementById(id).innerHTML += text;
+                    }
+                    function renderProfessionalExperience(element) {
+                        var text = ""
+                        text += "<p style=\"text-align: left;\">";
+                        text += element.role + ", " + element.location;
+                        text += "<span style=\"float:right;\">";
+                        text += element.start + "-" + element.end;
+                        text += "</span>"
+                        text += "<br>" + "<i>" + element.description + "</i>";
+                        text += "</p>";
+                        //  text += "<br>"
+                        render("professional", text);
+                    }
+                    path = "./assets/professionalExp.csv"
+                    d3.csv(path).then(function (data) {
 
-<!-- End Document
+                        data.forEach(function (a) {
+                            renderProfessionalExperience(a)
+                            console.log(a);
+                        });
+
+                    });
+                </script>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
+
 </html>
