@@ -48,90 +48,93 @@
                     <!-- Place this tag where you want the button to render. -->
                     <a class="github-button" href="https://github.com/nathancohen4299" data-size="large" aria-label="Follow @nathancohen4299 on GitHub">Follow
                         @nathancohen4299
-                    </a>
+                    </a><br>
+                    <div class="links">
+                        Click <a href="docs/resume_cohen.pdf">here</a> to access my resume.
+                        <br>
+                        Connect with me on <a href="https://www.linkedin.com/in/nathancohen99/">LinkedIn</a>.
+                    </div>
                     <br>
-                    <p>Click <a href="docs/resume_cohen.pdf">here</a> to access my resume.</p>
-                </div>
-                <div id="education">
-                    <h3><u>Education</u></h3>
-                    <h5 class="inline">Purdue University</h5>
-                    <p class="inline">(West Lafayette, IN)</p>
-                    <p class="">
-                        <i> Bachelor of Science: School of Computer Science</i>
-                        <br>
-                        <i>Expected Graduation Date: May 2021</i>
-                        <br>
-                        <i>Cumulative GPA: </i> <b>3.72</b>
-                    </p>
-                </div>
-                <!-- <div id="professional">
+                </div <div id="education">
+                <h3><u>Education</u></h3>
+                <h5 class="inline">Purdue University</h5>
+                <p class="inline">(West Lafayette, IN)</p>
+                <p class="">
+                    <i> Bachelor of Science: School of Computer Science</i>
+                    <br>
+                    <i>Expected Graduation Date: May 2021</i>
+                    <br>
+                    <i>Cumulative GPA: </i> <b>3.72</b>
+                </p>
+            </div>
+            <!-- <div id="professional">
                     <h3><u>Professional Experience</u></h3>
                     <div id="pe_content"></div>
                 </div> -->
-                <div id="relevant-coursework">
-                    <h3><u>Completed Courses</u></h3>
-                    <ul>
-                        <li>CS 18200: Discrete Math</li>
-                        <li>CS 24000: Programming in C</li>
-                        <li>CS 25000: Computer Architecture</li>
-                        <li>CS 25100: Data Structures and Algorithmns</li>
-                        <li>CS 25200: Systems Programming</li>
-                        <li>CS 34800: Information Systems</li>
-                        <li>CS 35400: Operating Systems</li>
-                    </ul>
-                    <h3><u>Current Courses (Fall 2019)</u></h3>
-                    <ul>
-                        <li>CS 38100: Introduction to the Analysis of Algorithms</li>
-                        <li>CS 42200: Computer Networks</li>
-                    </ul>
-                    <h3><u>Teaching Assistant</u></h3>
-                    <ul>
-                        <li>CS 18000: Introduction to Object Oriented Programming and Problem Solving</li>
-                    </ul>
-                </div>
-                <div id="skills">
-                    <h3><u>Skills</u></h3>
-                    <ul>
-                            <li>Java</li>
-                            <li>C</li>
-                            <li>C++</li>
-                            <li>JUnit</li>
-                            <li><abbr title="Test Driven Development">TDD</abbr></li>
-                            <li>Spring Boot</li>
-                        </ul>
-                </div>
-
-
-
-                <script>
-                    function render(id, text) {
-                        document.getElementById(id).innerHTML += text;
-                    }
-                    function renderProfessionalExperience(element) {
-                        var text = ""
-                        text += "<p style=\"text-align: left;\">";
-                        text += element.role + ", " + element.location;
-                        text += "<span style=\"float:right;\">";
-                        text += element.start + "-" + element.end;
-                        text += "</span>"
-                        text += "<br>" + "<i>" + element.description + "</i>";
-                        text += "</p>";
-                        //  text += "<br>"
-                        render("pe_content", text);
-                    }
-                    path = "./assets/professionalExp.csv"
-                    d3.csv(path).then(function (data) {
-
-                        data.forEach(function (a) {
-                            renderProfessionalExperience(a)
-                            console.log(a);
-                        });
-
-                    });
-                </script>
-
+            <div id="relevant-coursework">
+                <h3><u>Completed Courses</u></h3>
+                <ul>
+                    <li>CS 18200: Discrete Math</li>
+                    <li>CS 24000: Programming in C</li>
+                    <li>CS 25000: Computer Architecture</li>
+                    <li>CS 25100: Data Structures and Algorithmns</li>
+                    <li>CS 25200: Systems Programming</li>
+                    <li>CS 34800: Information Systems</li>
+                    <li>CS 35400: Operating Systems</li>
+                </ul>
+                <h3><u>Current Courses (Fall 2019)</u></h3>
+                <ul>
+                    <li>CS 38100: Introduction to the Analysis of Algorithms</li>
+                    <li>CS 42200: Computer Networks</li>
+                </ul>
+                <h3><u>Teaching Assistant</u></h3>
+                <ul>
+                    <li>CS 18000: Introduction to Object Oriented Programming and Problem Solving</li>
+                </ul>
             </div>
+            <div id="skills">
+                <h3><u>Skills</u></h3>
+                <ul>
+                    <li>Java</li>
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>JUnit</li>
+                    <li><abbr title="Test Driven Development">TDD</abbr></li>
+                    <li>Spring Boot</li>
+                </ul>
+            </div>
+
+
+
+            <script>
+                function render(id, text) {
+                    document.getElementById(id).innerHTML += text;
+                }
+                function renderProfessionalExperience(element) {
+                    var text = ""
+                    text += "<p style=\"text-align: left;\">";
+                    text += element.role + ", " + element.location;
+                    text += "<span style=\"float:right;\">";
+                    text += element.start + "-" + element.end;
+                    text += "</span>"
+                    text += "<br>" + "<i>" + element.description + "</i>";
+                    text += "</p>";
+                    //  text += "<br>"
+                    render("pe_content", text);
+                }
+                path = "./assets/professionalExp.csv"
+                d3.csv(path).then(function (data) {
+
+                    data.forEach(function (a) {
+                        renderProfessionalExperience(a)
+                        console.log(a);
+                    });
+
+                });
+            </script>
+
         </div>
+    </div>
     </div>
 
     <!-- Place this tag in your head or just before your close body tag. -->
