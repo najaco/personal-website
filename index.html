@@ -41,58 +41,65 @@
         <div class="row">
             <div class="eleven columns" style="margin-top: 10%">
                 <div class="intro">
-                    <h1>Nathan Cohen</h1>
-                    <h5>Purdue Computer Science: Class of 2021</h5>
-                    <a href="mailto:nathancohen@purdue.edu">nathancohen@purdue.edu</a>
-                    <br>
-                    <!-- Place this tag where you want the button to render. -->
-                    <a class="github-button" href="https://github.com/nathancohen4299" data-size="large" aria-label="Follow @nathancohen4299 on GitHub">Follow
-                        @nathancohen4299
-                    </a><br>
-                    <div class="links">
-                        Click <a href="docs/resume_cohen.pdf">here</a> to access my resume.
+                    <img src="images/profile_pic.jpeg" alt="Photo" />
+                    <div class="right_intro">
+                        <h1>Nathan Cohen</h1>
+                        <h5 class="sub">Purdue Computer Science: Class of 2021</h5>
+                        <a href="mailto:nathancohen@purdue.edu">nathancohen@purdue.edu</a> | <a href="mailto:ncohen4299@gmail.com">ncohen4299@gmail.com</a>
+                        <!-- Place this tag where you want the button to render. -->
+                        <!-- <a class="github-button" href="https://github.com/nathancohen4299" data-size="large" aria-label="Follow @nathancohen4299 on GitHub">Follow
+                            @nathancohen4299
+                        </a><br> -->
                         <br>
-                        Connect with me on <a href="https://www.linkedin.com/in/nathancohen99/">LinkedIn</a>.
+                        <a href="docs/resume_cohen.pdf">Resume</a> | 
+                        <a href="https://www.linkedin.com/in/nathancohen99/">LinkedIn</a> |
+                        <a href="https://github.com/nathancohen4299">GitHub</a> |
+                        <a href="https://twitter.com/nathancohen99">Twitter</a>
+                        <!-- <br> Connect with me on <a href="https://www.linkedin.com/in/nathancohen99/">LinkedIn</a>. -->
                     </div>
-                    <br>
-                </div <div id="education">
-                <h3><u>Education</u></h3>
-                <h5 class="inline">Purdue University</h5>
-                <p class="inline">(West Lafayette, IN)</p>
-                <p class="">
-                    <i> Bachelor of Science: School of Computer Science</i>
-                    <br>
-                    <i>Expected Graduation Date: May 2021</i>
-                    <br>
-                    <i>Cumulative GPA: </i> <b>3.72</b>
-                </p>
-            </div>
-            <!-- <div id="professional">
+                </div>
+                <br><br><br><br>
+                <hr>
+                <div id="education">
+                    <h3><u>Education</u></h3>
+                    <h5 class="inline">Purdue University</h5>
+                    <p class="inline">(West Lafayette, IN)</p>
+                    <p class="">
+                        <i> Bachelor of Science: School of Computer Science</i>
+                        <br>
+                        <i>Expected Graduation Date: May 2021</i>
+                        <br>
+                        <i>Cumulative GPA: </i> <b>3.76</b>
+                    </p>
+                </div>
+                <!-- <div id="professional">
                     <h3><u>Professional Experience</u></h3>
                     <div id="pe_content"></div>
                 </div> -->
-            <div id="relevant-coursework">
-                <h3><u>Completed Courses</u></h3>
-                <ul>
-                    <li>CS 18200: Discrete Math</li>
-                    <li>CS 24000: Programming in C</li>
-                    <li>CS 25000: Computer Architecture</li>
-                    <li>CS 25100: Data Structures and Algorithmns</li>
-                    <li>CS 25200: Systems Programming</li>
-                    <li>CS 34800: Information Systems</li>
-                    <li>CS 35400: Operating Systems</li>
-                </ul>
-                <h3><u>Current Courses (Fall 2019)</u></h3>
-                <ul>
-                    <li>CS 38100: Introduction to the Analysis of Algorithms</li>
-                    <li>CS 42200: Computer Networks</li>
-                </ul>
-                <h3><u>Teaching Assistant</u></h3>
+                <div id="relevant-coursework">
+                    <h4><u>Completed Courses</u></h4>
+                    <ul>
+                        <li>CS 18200: Discrete Math</li>
+                        <li>CS 24000: Programming in C</li>
+                        <li>CS 25000: Computer Architecture</li>
+                        <li>CS 25100: Data Structures and Algorithmns</li>
+                        <li>CS 25200: Systems Programming</li>
+                        <li>CS 34800: Information Systems</li>
+                        <li>CS 35400: Operating Systems</li>
+                        <li>CS 38100: Introduction to the Analysis of Algorithms</li>
+                        <li>CS 42200: Computer Networks</li>
+                    </ul>
+                    <h4><u>Current Courses (Spring 2020)</u></h4>
+                    <ul>
+                        <li>CS 35200: Compilers: Principles and Practice</li>
+                        <li>CS 35500: Introduction to Cryptography</li>
+                    </ul>
+                    <!-- <h3><u>Teaching Assistant</u></h3>
                 <ul>
                     <li>CS 18000: Introduction to Object Oriented Programming and Problem Solving</li>
-                </ul>
-            </div>
-            <!-- <div id="skills">
+                </ul> -->
+                </div>
+                <!-- <div id="skills">
                 <h3><u>Skills</u></h3>
                 <ul>
                     <li>Java</li>
@@ -106,35 +113,35 @@
 
 
 
-            <script>
-                function render(id, text) {
-                    document.getElementById(id).innerHTML += text;
-                }
-                function renderProfessionalExperience(element) {
-                    var text = ""
-                    text += "<p style=\"text-align: left;\">";
-                    text += element.role + ", " + element.location;
-                    text += "<span style=\"float:right;\">";
-                    text += element.start + "-" + element.end;
-                    text += "</span>"
-                    text += "<br>" + "<i>" + element.description + "</i>";
-                    text += "</p>";
-                    //  text += "<br>"
-                    render("pe_content", text);
-                }
-                path = "./assets/professionalExp.csv"
-                d3.csv(path).then(function (data) {
+                <script>
+                    function render(id, text) {
+                        document.getElementById(id).innerHTML += text;
+                    }
+                    function renderProfessionalExperience(element) {
+                        var text = ""
+                        text += "<p style=\"text-align: left;\">";
+                        text += element.role + ", " + element.location;
+                        text += "<span style=\"float:right;\">";
+                        text += element.start + "-" + element.end;
+                        text += "</span>"
+                        text += "<br>" + "<i>" + element.description + "</i>";
+                        text += "</p>";
+                        //  text += "<br>"
+                        render("pe_content", text);
+                    }
+                    path = "./assets/professionalExp.csv"
+                    d3.csv(path).then(function (data) {
 
-                    data.forEach(function (a) {
-                        renderProfessionalExperience(a)
-                        console.log(a);
+                        data.forEach(function (a) {
+                            renderProfessionalExperience(a)
+                            console.log(a);
+                        });
+
                     });
+                </script>
 
-                });
-            </script>
-
+            </div>
         </div>
-    </div>
     </div>
 
     <!-- Place this tag in your head or just before your close body tag. -->

@@ -377,7 +377,8 @@ hr {
   margin-top: 3rem;
   margin-bottom: 3.5rem;
   border-width: 0;
-  border-top: 1px solid #E1E1E1; }
+  border-top: 1px solid #222;
+ }
 
 
 /* Clearing
@@ -420,10 +421,6 @@ there.
 
 
 /* Added by me */
-div.intro {
-    text-align: center;
-    margin-bottom: 5rem
-}
 h4.inline{
     display:inline;
     margin-right: 15px;
@@ -439,4 +436,20 @@ p.inline {
 
 p.description {
     font-style: italic;
+}
+
+.intro img {
+    float: left;
+    width: 240px;
+    height: 225px;
+    background: #555;
+}
+div.right_intro{
+    position: relative;
+    top: -5px;
+    left: 10px;
+}
+
+h5.sub{
+   margin-top: -30px;
 }
