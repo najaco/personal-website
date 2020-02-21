@@ -4,10 +4,7 @@ import "./Page.css";
 function Projects() {
   return (
     <div class="Page">
-      <h1>
-        <u>Projects</u>
-      </h1>
-     
+      <h1>Projects</h1>
     </div>
   );
 }

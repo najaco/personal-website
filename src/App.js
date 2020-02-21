@@ -7,6 +7,7 @@ import "./App.css";
 import Resume from "./assets/docs/resume_cohen.pdf";
 import About from "./pages/AboutMe";
 import Education from "./pages/Education";
+import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 
 function App() {
@@ -14,10 +15,10 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <div className="TopNavigationBar">
-          <Navbar bg="primary" variant="dark" stickey="top">
+          <Navbar bg="light" variant="light" stickey="top">
             <Navbar.Brand href="/">Nathan Cohen</Navbar.Brand>
             <Nav className="mr-auto">
-              <Nav.Link href="/">About Me</Nav.Link>
+              <Nav.Link href="/about-me">About Me</Nav.Link>
               <Nav.Link href="/education">Education</Nav.Link>
               <Nav.Link href="/projects">Projects</Nav.Link>
               <Nav.Link href={Resume}>Resume</Nav.Link>
@@ -26,7 +27,8 @@ function App() {
         </div>
 
         <Switch>
-          <Route path="/" component={About} exact />
+          <Route path="/" component={Home} exact />
+          <Route path="/about-me" component={About} exact />
           <Route path="/education" component={Education} />
           <Route path="/projects" component={Projects} />
         </Switch>
