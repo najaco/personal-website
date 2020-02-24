@@ -14,7 +14,7 @@ function Course(courseId, title, status) {
 }
 
 function EvaluateStatus(course) {
-  if (course.status == status.COMPLETED) {
+  if (course.status === status.COMPLETED) {
     return "#33ff55";
   } else {
     return "#f5e617";
