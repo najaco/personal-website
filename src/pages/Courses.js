@@ -1,5 +1,6 @@
 import React from "react";
 import Table from "react-bootstrap/Table";
+import "./Page.css";
 
 const status = {
   COMPLETED: "Completed",
@@ -43,7 +44,7 @@ let courses = [
 let courses_list = courses.map(course => (
   <tr>
     <td>
-      <b>{course.courseId}</b>
+      {course.courseId}
     </td>
     <td>{course.title}</td>
     <td>

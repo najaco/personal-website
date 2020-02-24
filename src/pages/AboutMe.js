@@ -1,6 +1,4 @@
 import React from "react";
-import Image from "react-bootstrap/Image";
-import ProfPic from "../assets/profile_pic_resize.png";
 
 import "./Page.css";
 

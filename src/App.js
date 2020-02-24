@@ -17,12 +17,15 @@ function App() {
         <div className="TopNavigationBar">
           <Navbar bg="light" variant="light" stickey="top">
             <Navbar.Brand href="/">Nathan Cohen</Navbar.Brand>
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
               <Nav.Link href="/about-me">About Me</Nav.Link>
               <Nav.Link href="/education">Education</Nav.Link>
               <Nav.Link href="/projects">Projects</Nav.Link>
               <Nav.Link href={Resume}>Resume</Nav.Link>
             </Nav>
+            </Navbar.Collapse>
           </Navbar>
         </div>
 

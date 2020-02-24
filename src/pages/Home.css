@@ -6,4 +6,32 @@
 .Home h1{
     font-size: 72pt;
 }
+.social-buttons a{
+    display: inline-flex;
+    font-size: 64px;
+    width: 120px;
+    height: 120px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0 8px;
+    text-decoration: none;
+    background: linear-gradient(45deg, #22a6b3, #C0C0C0);
+    border-radius: 50%;
+}
 
+.social-buttons a::before{
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    /* background: linear-gradient(45deg, #22a6b3, #30336b); */
+    border-radius: 50%;
+    z-index: -1;
+    transition: 0.3s ease-in; 
+}
+.social-buttons a::hover::before{
+    /* transform: scale(0); */
+    width: 100px;
+}

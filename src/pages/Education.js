@@ -9,14 +9,16 @@ function Education() {
         Education
       </h1>
       <h2 class="inline">Purdue University</h2>
-      <p class="inline">(West Lafayette, IN)</p>
-      <p>Bachelor of Science: School of Computer Science</p>
-      <p>Expected Graduation Date: May 2021</p>
+      <span class="inline" id="location">(West Lafayette, IN)</span>
+      <p>Bachelor of Science: <b>School of Computer Science</b></p>
+      <p>Expected Graduation Date: <b>May 2021</b></p>
       <p>
         Cumulative GPA: <b>3.76</b>{" "}
       </p>
       <br></br>
+      <p>
       <Courses />
+      </p>
     </div>
   );
 }
