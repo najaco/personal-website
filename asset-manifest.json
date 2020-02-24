@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/personaal-website/static/css/main.ab149a84.chunk.css",
+    "main.js": "/personaal-website/static/js/main.7c102a70.chunk.js",
+    "main.js.map": "/personaal-website/static/js/main.7c102a70.chunk.js.map",
+    "runtime-main.js": "/personaal-website/static/js/runtime-main.c6c02e01.js",
+    "runtime-main.js.map": "/personaal-website/static/js/runtime-main.c6c02e01.js.map",
+    "static/css/2.47e06e2e.chunk.css": "/personaal-website/static/css/2.47e06e2e.chunk.css",
+    "static/js/2.fac79ffc.chunk.js": "/personaal-website/static/js/2.fac79ffc.chunk.js",
+    "static/js/2.fac79ffc.chunk.js.map": "/personaal-website/static/js/2.fac79ffc.chunk.js.map",
+    "index.html": "/personaal-website/index.html",
+    "precache-manifest.a5ac2ddba92d77a91d9a4bfcb0e00de5.js": "/personaal-website/precache-manifest.a5ac2ddba92d77a91d9a4bfcb0e00de5.js",
+    "service-worker.js": "/personaal-website/service-worker.js",
+    "static/css/2.47e06e2e.chunk.css.map": "/personaal-website/static/css/2.47e06e2e.chunk.css.map",
+    "static/css/main.ab149a84.chunk.css.map": "/personaal-website/static/css/main.ab149a84.chunk.css.map",
+    "static/js/2.fac79ffc.chunk.js.LICENSE.txt": "/personaal-website/static/js/2.fac79ffc.chunk.js.LICENSE.txt",
+    "static/media/resume_cohen.pdf": "/personaal-website/static/media/resume_cohen.121b3099.pdf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c6c02e01.js",
+    "static/css/2.47e06e2e.chunk.css",
+    "static/js/2.fac79ffc.chunk.js",
+    "static/css/main.ab149a84.chunk.css",
+    "static/js/main.7c102a70.chunk.js"
+  ]
+}
