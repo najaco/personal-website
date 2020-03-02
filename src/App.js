@@ -16,24 +16,42 @@ function App() {
       <BrowserRouter>
         <div className="TopNavigationBar">
           <Navbar bg="light" variant="light" stickey="top">
-            <Navbar.Brand href="/">Nathan Cohen</Navbar.Brand>
+            <Navbar.Brand href={process.env.PUBLIC_URL + "/"}>
+              Nathan Cohen
+            </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="mr-auto">
-              <Nav.Link href="/about-me">About Me</Nav.Link>
-              <Nav.Link href="/education">Education</Nav.Link>
-              <Nav.Link href="/projects">Projects</Nav.Link>
-              <Nav.Link href={Resume}>Resume</Nav.Link>
-            </Nav>
+              <Nav className="mr-auto">
+                <Nav.Link href={process.env.PUBLIC_URL + "/about-me"}>
+                  About Me
+                </Nav.Link>
+                <Nav.Link href={process.env.PUBLIC_URL + "/education"}>
+                  Education
+                </Nav.Link>
+                <Nav.Link href={process.env.PUBLIC_URL + "/projects"}>
+                  Projects
+                </Nav.Link>
+                <Nav.Link href={Resume}>Resume</Nav.Link>
+              </Nav>
             </Navbar.Collapse>
           </Navbar>
         </div>
 
         <Switch>
-          <Route path="/" component={Home} exact />
-          <Route path="/about-me" component={About} exact />
-          <Route path="/education" component={Education} />
-          <Route path="/projects" component={Projects} />
+          <Route path={process.env.PUBLIC_URL + "/"} component={Home} exact />
+          <Route
+            path={process.env.PUBLIC_URL + "/about-me"}
+            component={About}
+            exact
+          />
+          <Route
+            path={process.env.PUBLIC_URL + "/education"}
+            component={Education}
+          />
+          <Route
+            path={process.env.PUBLIC_URL + "/projects"}
+            component={Projects}
+          />
         </Switch>
       </BrowserRouter>
     </div>
