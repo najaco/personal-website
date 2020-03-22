@@ -57,7 +57,7 @@ let courses_list = courses.map(course => (
 
 function Courses() {
   return (
-    <div class="Courses">
+    <div className="Courses">
       <Table responsive>
         <thead>
           <th>Course No.</th>

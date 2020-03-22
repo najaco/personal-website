@@ -10,7 +10,6 @@ import Education from "./pages/Education";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import { Helmet } from 'react-helmet'
-
 const TITLE = "Nathan Cohen"
 function toRoute(route) {
     return process.env.PUBLIC_URL + "#" + route
@@ -31,8 +30,8 @@ function App() {
             <Nav className="mr-auto">
               <Nav.Link href={toRoute("/about-me")}>About Me</Nav.Link>
               <Nav.Link href={toRoute("/education")}>Education</Nav.Link>
-              <Nav.Link href={toRoute("/projects")}>Projects</Nav.Link>
-              <Nav.Link href={Resume}>Resume</Nav.Link>
+              {/* <Nav.Link href={toRoute("/projects")}>Projects</Nav.Link> */}
+              <Nav.Link href={Resume}>Résumé</Nav.Link>
             </Nav>
             </Navbar.Collapse>
           </Navbar>

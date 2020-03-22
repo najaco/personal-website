@@ -3,7 +3,7 @@ import "./Page.css";
 
 function Projects() {
   return (
-    <div class="Page">
+    <div className="Page">
       <h1>Projects</h1>
     </div>
   );

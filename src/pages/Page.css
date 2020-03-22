@@ -5,13 +5,31 @@
 .Page h1 {
   font-size: 50pt;
 }
-.Page Table {
-    color: #f8f9fa;
+.Page table {
+  color: #f8f9fa;
 }
 
 .inline {
-    display: inline-block;
+  display: inline-block;
 }
 #location {
-    margin-left: 30px;
+  margin-left: 30px;
+}
+
+.aboutMeSection img {
+  float: left;
+  width: 160px;
+  height: 160px;
+}
+.aboutMeSection span {
+  display: block;
+  margin-top: 10pt;
+  padding-left: 15%;
+}
+.aboutMeSection {
+  display: flex;
+  align-items: center;
+}
+.aboutMeSectionDescription {
+  font-size: 16pt;
 }

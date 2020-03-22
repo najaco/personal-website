@@ -3,7 +3,7 @@ import "./Home.css";
 
 function Home() {
   return (
-    <div class="Home">
+    <div className="Home">
       <h1>Nathan Cohen</h1>
       <link
         rel="stylesheet"

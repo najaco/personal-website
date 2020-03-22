@@ -4,7 +4,7 @@ import Courses from "./Courses"
 
 function Education() {
   return (
-    <div class="Page">
+    <div className="Page">
       <h1>
         Education
       </h1>
