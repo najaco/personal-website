@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2c1083b35a258fed74d03e5d9a7f7865",
+    "revision": "77948f00d6f535681741be71b2ceba61",
     "url": "/personal-website/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/personal-website/static/css/2.47e06e2e.chunk.css"
   },
   {
-    "revision": "f538718acc53f7fff370",
+    "revision": "a72e0533c098e1046f29",
     "url": "/personal-website/static/css/main.fa436a14.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/personal-website/static/js/2.a7033058.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f538718acc53f7fff370",
-    "url": "/personal-website/static/js/main.bfabe046.chunk.js"
+    "revision": "a72e0533c098e1046f29",
+    "url": "/personal-website/static/js/main.7a6a78ab.chunk.js"
   },
   {
     "revision": "1e06780838e4eefcf678",
@@ -32,7 +32,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/personal-website/static/media/profile_pic_resize.a09a1c38.png"
   },
   {
-    "revision": "121b3099d51613cdf738d0de9c5afcac",
-    "url": "/personal-website/static/media/resume_cohen.121b3099.pdf"
+    "revision": "7c71a812bdb0a1c325677f9a10410c8a",
+    "url": "/personal-website/static/media/resume_cohen.7c71a812.pdf"
   }
 ]);
