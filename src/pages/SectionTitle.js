@@ -1,9 +1,9 @@
-import React, { Component } from "react";
+import React from 'react';
 
 const SectionTitle = (props) => {
   return (
-    <div className="header">
-      <div className="header_icon">
+    <div className='header'>
+      <div className='header_icon'>
         <i class={props.icon_id} />
       </div>
       <span>
