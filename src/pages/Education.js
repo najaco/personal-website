@@ -1,13 +1,12 @@
 import React from "react";
 import "./Page.css";
 import Courses from "./Courses"
+import SectionTitle from "./SectionTitle";
 
 function Education() {
   return (
-    <div className="Page">
-      <h1>
-        Education
-      </h1>
+    <div className="Page" id = "edu">
+    <SectionTitle title={"Education"} icon_id={"fas fa-graduation-cap"}/>
       <h2 class="inline">Purdue University</h2>
       <span class="inline" id="location">(West Lafayette, IN)</span>
       <p>Bachelor of Science: <b>School of Computer Science</b></p>

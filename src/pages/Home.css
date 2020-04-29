@@ -1,24 +1,31 @@
 .Home {
     text-align: center;
-    background-color: #1d3e53;
-    margin-top: 10%;
+    background-color: black;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    margin-top: 5%;
+    margin-bottom: 10%;
 }
 .Home h1{
     font-size: 72pt;
+    color: white;
 }
 .social-buttons a{
     display: inline-flex;
     font-size: 64px;
     width: 120px;
     height: 120px;
-    color: #fff;
+    color: blue;
     justify-content: center;
     align-items: center;
     position: relative;
     margin: 0 8px;
     text-decoration: none;
-    background: linear-gradient(45deg, #22a6b3, #C0C0C0);
-    border-radius: 50%;
+    /* background: linear-gradient(45deg, #22a6b3, #C0C0C0); */
+    background: black;
+    border-color: green;
+    border: 2px solid blue;
+    border-radius: 0%;
 }
 
 .social-buttons a::before{

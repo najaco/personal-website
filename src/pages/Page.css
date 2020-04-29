@@ -1,19 +1,22 @@
 .Page {
-  margin-left: 2%;
-  color: #f8f9fa;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 5%;
+  color: black;
 }
 .Page h1 {
   font-size: 50pt;
 }
 .Page table {
-  color: #f8f9fa;
+  color: black;
 }
 
 .inline {
   display: inline-block;
 }
 #location {
-  margin-left: 30px;
+  margin-left: 40px;
+  font-size: 16pt;
 }
 
 .aboutMeSection img {
@@ -32,4 +35,31 @@
 }
 .aboutMeSectionDescription {
   font-size: 16pt;
+}
+
+.header {
+  display: inline-block;
+  width: 100%;
+}
+.header_icon {
+  float: left;
+  font-size: 40pt;
+  margin-right: 2.5%;
+}
+.header hr {
+  border-top: 1px solid black;
+}
+
+#about_me_text {
+  font-size: 18pt;
+}
+ul#courses_list {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  font-size: 14pt;
+}
+
+.Page#edu p{
+    font-size: 14pt;
 }
