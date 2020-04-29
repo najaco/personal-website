@@ -19,6 +19,9 @@ function Home() {
         <a href="https://github.com/nathancohen4299" target="_blank">
           <i class="fab fa-github"></i>
         </a>
+        <a href="mailto:ncohen4299@gmail.com" target="_blank">
+        <i class="far fa-envelope"></i>
+        </a>
       </div>
     </div>
   );
