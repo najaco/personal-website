@@ -21,7 +21,7 @@ function App() {
     <Helmet>
         <title>{TITLE}</title>
     </Helmet>
-      <HashRouter>
+      {/* <HashRouter>
         <div className="TopNavigationBar">
           <Navbar bg="light" variant="light" stickey="top">
             <Navbar.Brand href={toRoute("/")}>Nathan Cohen</Navbar.Brand>
@@ -31,7 +31,7 @@ function App() {
               <Nav.Link href={toRoute("/about-me")}>About Me</Nav.Link>
               <Nav.Link href={toRoute("/education")}>Education</Nav.Link>
               {/* <Nav.Link href={toRoute("/projects")}>Projects</Nav.Link> */}
-              <Nav.Link href={Resume}>Résumé</Nav.Link>
+              {/* <Nav.Link href={Resume}>Résumé</Nav.Link>
             </Nav>
             </Navbar.Collapse>
           </Navbar>
@@ -43,7 +43,11 @@ function App() {
           <Route path="/education" component={Education} />
           <Route path="/projects" component={Projects} />
         </Switch>
-      </HashRouter>
+      </HashRouter> */}
+      <Home/>
+      <About/>
+      <Education/>
+      <Projects/>
     </div>
   );
 }
