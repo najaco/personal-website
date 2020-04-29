@@ -1,25 +1,26 @@
 {
   "files": {
-    "main.css": "/personal-website/static/css/main.83bc511c.chunk.css",
-    "main.js": "/personal-website/static/js/main.ccca3062.chunk.js",
-    "main.js.map": "/personal-website/static/js/main.ccca3062.chunk.js.map",
+    "main.css": "/personal-website/static/css/main.1a75e128.chunk.css",
+    "main.js": "/personal-website/static/js/main.d8e3f8f0.chunk.js",
+    "main.js.map": "/personal-website/static/js/main.d8e3f8f0.chunk.js.map",
     "runtime-main.js": "/personal-website/static/js/runtime-main.660c094e.js",
     "runtime-main.js.map": "/personal-website/static/js/runtime-main.660c094e.js.map",
     "static/css/2.47e06e2e.chunk.css": "/personal-website/static/css/2.47e06e2e.chunk.css",
-    "static/js/2.de0cf21a.chunk.js": "/personal-website/static/js/2.de0cf21a.chunk.js",
-    "static/js/2.de0cf21a.chunk.js.map": "/personal-website/static/js/2.de0cf21a.chunk.js.map",
+    "static/js/2.368d9536.chunk.js": "/personal-website/static/js/2.368d9536.chunk.js",
+    "static/js/2.368d9536.chunk.js.map": "/personal-website/static/js/2.368d9536.chunk.js.map",
     "index.html": "/personal-website/index.html",
-    "precache-manifest.1f8f986be22253e1b08a20443232251d.js": "/personal-website/precache-manifest.1f8f986be22253e1b08a20443232251d.js",
+    "precache-manifest.b8e927296cc895ce46f16493d5c357da.js": "/personal-website/precache-manifest.b8e927296cc895ce46f16493d5c357da.js",
     "service-worker.js": "/personal-website/service-worker.js",
     "static/css/2.47e06e2e.chunk.css.map": "/personal-website/static/css/2.47e06e2e.chunk.css.map",
-    "static/css/main.83bc511c.chunk.css.map": "/personal-website/static/css/main.83bc511c.chunk.css.map",
-    "static/js/2.de0cf21a.chunk.js.LICENSE.txt": "/personal-website/static/js/2.de0cf21a.chunk.js.LICENSE.txt"
+    "static/css/main.1a75e128.chunk.css.map": "/personal-website/static/css/main.1a75e128.chunk.css.map",
+    "static/js/2.368d9536.chunk.js.LICENSE.txt": "/personal-website/static/js/2.368d9536.chunk.js.LICENSE.txt",
+    "static/media/resume_cohen.pdf": "/personal-website/static/media/resume_cohen.66c8b5d4.pdf"
   },
   "entrypoints": [
     "static/js/runtime-main.660c094e.js",
     "static/css/2.47e06e2e.chunk.css",
-    "static/js/2.de0cf21a.chunk.js",
-    "static/css/main.83bc511c.chunk.css",
-    "static/js/main.ccca3062.chunk.js"
+    "static/js/2.368d9536.chunk.js",
+    "static/css/main.1a75e128.chunk.css",
+    "static/js/main.d8e3f8f0.chunk.js"
   ]
 }
