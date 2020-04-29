@@ -3,8 +3,8 @@ import './Page.css';
 import React from 'react';
 
 import SectionTitle from './SectionTitle';
-
-
+import Button from 'react-bootstrap/Button'
+import Resume from '../assets/docs/resume_cohen.pdf'
 function About() {
   return (
     <div className='Page'>
@@ -17,7 +17,10 @@ function About() {
           where I built a system for streaming video over UDP, which will be used for benchmarking different adaptive streaming algorithms. 
           This summer I will be interning at for Cisco Systems.
         </p>
+        <Button variant="info" size="lg" onClick={() => window.location = "mailto:ncohen4299@gmail.com"}>Email Me!</Button>{'    '}
+        <Button variant="info" size="lg" onClick={() => window.location = Resume}>View my Resume</Button>{' '}
     </div>
+
   );
 }
 
