@@ -17,7 +17,7 @@ function About() {
           where I built a system for streaming video over UDP, which will be used for benchmarking different adaptive streaming algorithms. 
           This summer I will be interning at for Cisco Systems.
         </p>
-        <Button variant="info" size="lg" onClick={() => window.location = "mailto:ncohen4299@gmail.com"}>Email Me</Button>{'    '}
+        <Button variant="info" size="lg" onClick={() => window.location = "mailto:ncohen4299@gmail.com"}>Email: ncohen4299@gmail.com</Button>{'    '}
         <Button variant="info" size="lg" onClick={() => window.location = Resume}>View my Resume</Button>{' '}
     </div>
 
