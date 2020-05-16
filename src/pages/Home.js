@@ -16,7 +16,7 @@ function Home() {
         <a href="https://twitter.com/nathancohen99" target="_blank" rel="noopener noreferrer" >
           <i class="fab fa-twitter"></i>
         </a>
-        <a href="https://github.com/nathancohen4299" target="_blank" rel="noopener noreferrer" >
+        <a href="https://github.com/najaco" target="_blank" rel="noopener noreferrer" >
           <i class="fab fa-github"></i>
         </a>
         <a href="mailto:ncohen4299@gmail.com" target="_blank" rel="noopener noreferrer" >
