@@ -1,16 +1,9 @@
-.Page {
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-bottom: 5%;
+.Section {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 2%;
   color: black;
 }
-.Page h1 {
-  font-size: 50pt;
-}
-.Page table {
-  color: black;
-}
-
 .inline {
   display: inline-block;
 }
@@ -18,38 +11,35 @@
   margin-left: 40px;
   font-size: 16pt;
 }
-
-.aboutMeSection img {
-  float: left;
-  width: 160px;
-  height: 160px;
-}
-.aboutMeSection span {
-  display: block;
-  margin-top: 10pt;
-  padding-left: 15%;
-}
 .aboutMeSection {
+  img {
+    float: left;
+    width: 160px;
+    height: 160px;
+  }
+  span {
+    display: block;
+    margin-top: 10pt;
+    padding-left: 15%;
+  }
   display: flex;
   align-items: center;
 }
 .aboutMeSectionDescription {
   font-size: 16pt;
 }
-
 .header {
   display: inline-block;
   width: 100%;
+  hr {
+    border-top: 1px solid black;
+  }
 }
 .header_icon {
   float: left;
   font-size: 40pt;
   margin-right: 2.5%;
 }
-.header hr {
-  border-top: 1px solid black;
-}
-
 #about_me_text {
   font-size: 18pt;
 }
@@ -60,6 +50,19 @@ ul#courses_list {
   font-size: 14pt;
 }
 
-.Page#edu p{
+.Section#Education {
+    // background-color: orange;
+  p {
     font-size: 14pt;
+  }
+}
+.Section#Projects {
+//   background-color: red;
+}
+
+.Section#AboutMe {
+    // background-color: blue;
+}
+.Section#Projects{
+    // background-color: green;
 }

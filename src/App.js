@@ -4,10 +4,10 @@ import "./App.css";
 import React from "react";
 import { Helmet } from "react-helmet";
 
-import About from "./pages/AboutMe";
-import Education from "./pages/Education";
-import Home from "./pages/Home";
-import Projects from "./pages/Projects";
+import About from "./components/AboutMe";
+import Education from "./components/Education";
+import Home from "./components/Home";
+import Projects from "./components/Projects";
 
 const TITLE = "Nathan Cohen";
 
