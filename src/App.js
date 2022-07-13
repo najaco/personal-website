@@ -19,6 +19,7 @@ class App extends React.Component {
           <title>{TITLE}</title>
         </Helmet>
         <Home />
+        <h1 style={{"color":"red", "text-align": "center"}}>This website is not currently maintained or updated</h1>
         <About />
         <Education />
         <Projects />
